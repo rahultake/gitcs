@@ -1,0 +1,149 @@
+.scale-heading {
+  font-size: 2.5rem;
+}
+
+.scale-block {
+  border-radius: 15px;
+  min-height: 180px;
+  background: rgb(253, 253, 253) !important;
+  box-shadow: -6px 6px 10px 0px #ebf0fd;
+}
+
+.scale-block h3 {
+  line-height: 1.4;
+}
+
+.scale-block:hover {
+  box-shadow: -10px 10px 10px 0px #ebf0fd;
+}
+
+.scale-block .scale-arrow {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50px;
+  transform: skew(-18deg);
+  margin-right: -80px;
+  background: #caf2f4;
+  transition: 0.25s ease-in-out;
+}
+
+.scale-block .scale-arrow i {
+  position: absolute;
+  bottom: 15px;
+  left: 8px;
+  transform: skew(18deg);
+  color: #000;
+  opacity: .3
+}
+
+.scale-block:hover .scale-arrow {
+  margin-right: -45px;
+}
+
+.svg-icon {
+  width: 30px;
+  height: 30px;
+  margin: 1rem 0 .5rem;
+}
+
+.scale-arrow.coaching-institutes {
+  background: rgba(105, 172, 106, .4)
+}
+
+
+.npfWidgetButton {
+  background: #000;
+}
+
+.buildExtension img {
+  height: 40px;
+}
+
+p.paragraph-3 {
+  font-size: 14px !important;
+  margin-top: 5px
+}
+
+.gradientbackground {
+  background-image: linear-gradient(to top, rgb(231, 249, 255), rgb(231, 247, 255), rgb(232, 245, 255), rgb(234, 242, 255), rgb(236, 240, 255));
+}
+
+@media (min-width: 992px) {
+  .gradientbackground::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 18px;
+    width: 300px;
+    z-index: 999;
+    height: 100%;
+    transform: rotate(180deg);
+    background: url("../../../../www.meritto.com/wp-content/uploads/2022/10/Vector.png") left center / 100% no-repeat;
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+
+  .gradientbackground::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 18px;
+    width: 300px;
+    z-index: 999;
+    height: 100%;
+    background: url("../../../../www.meritto.com/wp-content/uploads/2022/10/Vector.png") right center / 100% no-repeat;
+    background-repeat: no-repeat;
+    background-position: right center;
+  }
+}
+
+.plus {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.plus:after {
+  content: "+";
+  display: inline-block;
+}
+
+.oneK {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.oneK:after {
+  content: "k";
+  display: inline-block;
+}
+
+.btnText {
+  color: #fff !important;
+}
+
+.typewriteEffect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 71px;
+}
+
+.typecontainer {
+  min-width: 150px;
+  display: inline-block;
+}
+
+.typewrite .wrap {
+  color: #7781e8;
+  display: inline-block;
+  margin-right: 5px;
+  text-align: right;
+  font-weight: 700;
+  font-size: 1em;
+  border-right: 2px solid #7781e8;
+  line-height: 40px;
+  padding-right: 5px
+}
