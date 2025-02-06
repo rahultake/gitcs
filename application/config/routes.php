@@ -55,6 +55,7 @@ $route['translate_uri_dashes'] = FALSE;
 
 //Website
 $route['']  = "Main/index";
+$route['(:any)'] = 'Main/show_page/$1';
 
 //Admin
 $route['/admin/login']  = "Admin/login";

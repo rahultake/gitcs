@@ -36,11 +36,14 @@
     <script>var adminUrl = "<?php echo admin_url(); ?>";</script>
     <!-- jQuery (required by DataTables) -->
     <script src="<?php echo base_url('plugins/jquery.min.js'); ?>"></script>
+    <script src="<?php echo base_url('plugins/jquery-ui.min.js'); ?>"></script>
     <script src="<?php echo base_url('plugins/bootstrap.bundle.min.js'); ?>"></script>
     <script src="<?php echo base_url('plugins/sweetalert2.min.js'); ?>"></script>
     <script src="<?php echo base_url('plugins/toastr.min.js'); ?>"></script>
     <script src="<?php echo base_url('plugins/adminlte.min.js'); ?>"></script>
     <script src="<?php echo base_url('js/demo.js'); ?>"></script>
+    <!-- Summernote -->
+    <script src="<?php echo base_url('plugins/summernote-bs4.min.js'); ?>"></script>
 
     <!-- DataTables JS -->
     <script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
@@ -89,6 +92,23 @@
       cardHeaders.forEach((cardHeader) => {
         cardHeader.style.cursor = 'move';
       });
+    </script>
+    <script>
+      $(function () {
+        // Summernote
+        $('#summernote').summernote({
+            height: 300 // Set height in pixels
+        });
+        $('#summernote2').summernote({
+            height: 300 // Set height in pixels
+        });
+
+        // CodeMirror
+        // CodeMirror.fromTextArea(document.getElementById("codeMirrorDemo"), {
+        //   mode: "htmlmixed",
+        //   theme: "monokai"
+        // });
+      })
     </script>
   </body>
   <!--end::Body-->

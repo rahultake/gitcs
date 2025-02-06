@@ -61,7 +61,6 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
                             <?php if ($navigation->navigation_type == 'multiple'): ?>
                               <a href="<?php echo admin_url('multilevel_navigation/' . $navigation->id); ?>" class="btn btn-sm btn-primary"><i class="bi bi-plus-lg"></i> Add Multilevel</a>                           
                             <?php endif; ?>
-                            <a href="<?php echo admin_url('add_seo/' . $navigation->id); ?>" class="btn btn-sm btn-primary"><i class="bi bi-plus-lg"></i> Add SEO</a>
                             <a href="<?php echo admin_url('delete_navigation/' . $navigation->id); ?>" onclick="return confirm('Are you sure you want to delete this navigation?');" class="btn btn-sm btn-danger">Delete</a>
                           </td>
                         </tr>

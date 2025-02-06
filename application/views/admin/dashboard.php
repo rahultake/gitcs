@@ -48,7 +48,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
                   </div>
                   <i class="small-box-icon bi bi-file-fill"></i>
                   <a
-                    href="<?php echo admin_url('pages'); ?>"
+                    href="<?php echo admin_url('pagelist'); ?>"
                     class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover"
                   >
                     More info <i class="bi bi-link-45deg"></i>
@@ -65,7 +65,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
                   </div>
                   <i class="small-box-icon bi bi-border-all"></i>
                   <a
-                    href="<?php echo admin_url('components'); ?>"
+                    href="<?php echo admin_url('componentlist'); ?>"
                     class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover"
                   >
                     More info <i class="bi bi-link-45deg"></i>

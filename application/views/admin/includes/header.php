@@ -42,6 +42,8 @@
     <link rel="stylesheet" href="<?php echo base_url('plugins/toastr.min.css'); ?>" />
     <link rel="stylesheet" href="<?php echo base_url('css/adminlte.css'); ?>" />
     <link rel="stylesheet" href="<?php echo base_url('css/style.css'); ?>" />
+    <!-- summernote -->
+    <link rel="stylesheet" href="<?php echo base_url('plugins/summernote-bs4.min.css'); ?>">
     <!-- DataTables CSS -->
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css">
     <!--end::Required Plugin(AdminLTE)-->
@@ -129,12 +131,14 @@
                   <p>Dashboard</p>
                 </a>
               </li>
+              <li class="nav-header">Manage Users</li>
               <li class="nav-item">
                 <a href="<?php echo admin_url('users'); ?>" class="nav-link">
                   <i class="nav-icon bi bi-clipboard-fill"></i>
                   <p>Users</p>
                 </a>
               </li>
+              <li class="nav-header">Site Essential</li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="nav-icon bi bi-box-seam-fill"></i>
@@ -174,18 +178,31 @@
                 </a>
                 <ul class="nav nav-treeview" style="box-sizing: border-box; display: none;">
                   <li class="nav-item">
-                    <a href="<?php echo admin_url('pages'); ?>" class="nav-link">
+                    <a href="<?php echo admin_url('pagelist'); ?>" class="nav-link">
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M6 3v6m10 7l4-4l-4-4"></path><path d="M6 21v-6a3 3 0 0 1 3-3h11"></path></g></svg>
                       <p>Page Manage</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="<?php echo admin_url('components'); ?>" class="nav-link">
+                    <a href="<?php echo admin_url('componentlist'); ?>" class="nav-link">
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M6 3v6m10 7l4-4l-4-4"></path><path d="M6 21v-6a3 3 0 0 1 3-3h11"></path></g></svg>
                       <p>Component Manage</p>
                     </a>
                   </li>
                 </ul>
+              </li>
+              <li class="nav-header">Site Manage</li>
+              <li class="nav-item">
+                <a href="<?php echo admin_url('settings'); ?>" class="nav-link">
+                  <i class="nav-icon bi bi-gear"></i>
+                  <p>Settings</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?php echo admin_url('social'); ?>" class="nav-link">
+                  <i class="nav-icon bi bi-share"></i>
+                  <p>Social Links</p>
+                </a>
               </li>
             </ul>
             <!--end::Sidebar Menu-->
